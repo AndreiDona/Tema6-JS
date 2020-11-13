@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+    var match1 = `Manchester City 1 - 1 Liverpool`;
+    var match2 = `Chelsea 4 - 1 Sheffield`;
+    var match3 = `Dortmund 2 - 3 Bayern`;
+
+    var result1 = match1.replace(/\D/g, '');
+    console.log(result1);
+    var result2 = match2.replace(/\D/g, '');
+    console.log(result2);
+    var result3 = match3.replace(/\D/g, '');
+    console.log(result3);
+
+    var manScore = result1.charAt(0);
+    var livScore = result1.charAt(1);
+    if (manScore == livScore) {
+        console.log(`Mancheste vs Liverpool = Egalitate!`)
+    }
+
+    var chelsea = result2.charAt(0);
+    var sheff = result2.charAt(1);
+    if (chelsea > sheff) {
+        console.log(`Chelsea vs Sheffield = Chelsea wins!`)
+    }
+
+    var dortmund = result3.charAt(0);
+    var bayern = result3.charAt(1);
+    if (dortmund < bayern) {
+        console.log(`Dortmund vs Bayerns = Bayern wins!`)
+    }
+
+
+
+
+</script>
+
+<body>
+
+    Avand un sir de caractere ce reprezinta scorul unui meci, sa se afiseze echipa castigatoare.
+    Exemple:
+    “Manchester City 1 - 1 Liverpool” - se afiseaza “Egalitate”
+    “Chelsea 4 - 1 Sheffield” - se afiseaza “Chelsea”
+    “Dortmund 2 - 3 Bayern” - se afiseaza “Bayern”
+
+</body>
+
+</html>
