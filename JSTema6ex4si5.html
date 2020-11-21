@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    var car1 = {
+        brand: `BMW`,
+        model: `335i`,
+        madeIn: `Germany`,
+        year: 2019,
+    };
+    var car2 = {
+        brand: `Audi`,
+        model: `A4`,
+        madeIn: `Germany`,
+        year: 2014,
+    };
+    var car3 = {
+        brand: `Dacia`,
+        model: `Sandero`,
+        madeIn: `Romania`,
+        year: 2020,
+    };
+
+    var cars = [car1, car2, car3]
+    for (var car of cars) {
+        if (car.madeIn == `Germany`) {
+            console.log(`${car.brand} is made in Germany`)
+        }
+    }
+//varianta usoara :D
+    for (var car of cars) {
+        if (car.year >= 2020) {
+            console.log(`${car.brand} este cea mai noua masina`)
+        }
+    }
+
+//varianta acceptata de Teo :))
+    if (car1.year > car2.year && car1.year > car3.year) {
+        console.log(`${car1.brand} este cea mai noua masina`)
+    } else if (car2.year > car1.year && car2.year > car3.year) {
+        console.log(`${car2.brand} este cea mai noua masina`)
+    } else if (car3.year > car1.year && car3.year > car2.year) {
+        console.log(`${car3.brand} este cea mai noua masina`)
+    }
+
+
+</script>
+
+
+
+
+
+
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+    var salaries = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+    var total = 0;
+
+    for (var salary = 0; salary < salaries.length; salary++) {
+        total += salaries[salary];
+    }
+    console.log(`totalul este ${total}`);
+
+    var avg = total / salaries.length;
+    console.log(`media este ${avg}`);
+
+    for (var salary of salaries) {
+        if (salary > avg) {
+            console.log(`salariul de  ${salary} este mai mare decat media `)
+        }
+    }
+
+
+</script>
+
+
+<body>
+
+</body>
+
+</html>
